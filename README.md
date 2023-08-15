@@ -1,2 +1,9 @@
-# Yolov5_61_LPRNet_PySide__vehicle_license_plate_recognition
+# Yolov5-6.1_LPRNet_PySide6__vehicle_license_plate_recognition
 基于Yolov5_6.1、LPRNet、PySide6开发的车牌识别系统
+## 概述
+仅支持常见的蓝牌和绿牌
+## 环境
+项目中的[requirements.txt](requirements.txt)来源于Yolov5_6.1  
+我的项目环境在[my_env.txt](my_env.txt)，如果遇到各种包的版本问题，可以作为参考  
+
+## 演示
