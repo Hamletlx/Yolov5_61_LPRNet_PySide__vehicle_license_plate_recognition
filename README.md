@@ -7,3 +7,7 @@
 我的项目环境在[my_env.txt](my_env.txt)，如果遇到各种包的版本问题，可以作为参考  
 
 ## 演示
+
+
+https://github.com/Hamletlx/Yolov5_61_LPRNet_PySide__vehicle_license_plate_recognition/assets/123156312/0b46308d-f5e6-43a5-9596-f411b696eb03
+
