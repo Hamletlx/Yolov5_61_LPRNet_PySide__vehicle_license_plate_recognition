@@ -1,0 +1,2 @@
+# Yolov5_61_LPRNet_PySide__vehicle_license_plate_recognition
+基于Yolov5_6.1、LPRNet、PySide6开发的车牌识别系统
