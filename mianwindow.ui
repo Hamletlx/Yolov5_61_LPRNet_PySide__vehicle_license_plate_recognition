@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1306</width>
+    <height>930</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1306</width>
+    <height>930</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1306</width>
+    <height>930</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Consolas</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>车牌识别Demo</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="mianwindow.qrc">
+    <normaloff>:/Image/windowico.png</normaloff>:/Image/windowico.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel#source, #division{
+    color: #CBCBCB;
+	border: 2px solid #3194D1;
+	background: #FFFFFF
+}
+
+QListWidget#listWidget{
+	border: 2px solid #3194D1;
+	background: #FFFFFF
+}
+
+QListWidget::item:hover#listWidget{
+	border: 2px solid #006363
+}
+
+QListWidget::item:selected#listWidget{
+	color:black;
+	background:#60D6A7
+}
+
+QTableWidget#tableWidget{
+	border: 2px solid #3194D1;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>1306</width>
+     <height>900</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1306</width>
+     <height>900</height>
+    </size>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_1">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+          <pointsize>20</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>原图</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+          <pointsize>20</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>车牌检测图</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="source">
+        <property name="minimumSize">
+         <size>
+          <width>640</width>
+          <height>640</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>640</width>
+          <height>640</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+          <pointsize>20</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>SOURCE_IMAGE</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="division">
+        <property name="minimumSize">
+         <size>
+          <width>640</width>
+          <height>640</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>640</width>
+          <height>640</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+          <pointsize>20</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>DIVISION_IMAGE</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="rowCount">
+       <number>0</number>
+      </property>
+      <column>
+       <property name="text">
+        <string>图片名称</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>10</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>录入时间</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>10</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>车牌号</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>10</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>车牌类型</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>Consolas</family>
+         <pointsize>10</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+      </column>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1306</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>11</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>10</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>功能</string>
+    </property>
+    <addaction name="select"/>
+    <addaction name="location"/>
+    <addaction name="number"/>
+    <addaction name="separator"/>
+    <addaction name="selects"/>
+    <addaction name="separator"/>
+    <addaction name="select_video"/>
+    <addaction name="separator"/>
+    <addaction name="select_camera"/>
+    <addaction name="close_camera"/>
+    <addaction name="separator"/>
+    <addaction name="clear"/>
+    <addaction name="repetition"/>
+    <addaction name="output"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>关于</string>
+    </property>
+    <addaction name="information"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <action name="file">
+   <property name="text">
+    <string>选择文件</string>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+  </action>
+  <action name="location">
+   <property name="text">
+    <string>车牌定位</string>
+   </property>
+  </action>
+  <action name="number">
+   <property name="text">
+    <string>号码提取</string>
+   </property>
+  </action>
+  <action name="repetition">
+   <property name="text">
+    <string>去重</string>
+   </property>
+  </action>
+  <action name="output">
+   <property name="text">
+    <string>导出</string>
+   </property>
+  </action>
+  <action name="select">
+   <property name="text">
+    <string>选择图片</string>
+   </property>
+  </action>
+  <action name="information">
+   <property name="text">
+    <string>信息</string>
+   </property>
+  </action>
+  <action name="selects">
+   <property name="text">
+    <string>选择文件夹</string>
+   </property>
+  </action>
+  <action name="clear">
+   <property name="text">
+    <string>清空</string>
+   </property>
+  </action>
+  <action name="select_camera">
+   <property name="text">
+    <string>选择摄像头</string>
+   </property>
+  </action>
+  <action name="close_camera">
+   <property name="text">
+    <string>关闭摄像头</string>
+   </property>
+  </action>
+  <action name="select_video">
+   <property name="text">
+    <string>选择视频</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="mianwindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>
