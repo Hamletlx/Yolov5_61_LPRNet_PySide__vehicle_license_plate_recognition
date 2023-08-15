@@ -3,6 +3,7 @@
 ## 概述
 仅支持常见的蓝牌和绿牌
 ## 环境
+PyTorch版本 本项目是1.8，要求要大于1.7，经检验版本太高会报错  
 项目中的[requirements.txt](requirements.txt)来源于Yolov5_6.1  
 我的项目环境在[my_env.txt](my_env.txt)，如果遇到各种包的版本问题，可以作为参考  
 
