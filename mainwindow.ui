@@ -35,7 +35,7 @@
    <string>车牌识别Demo</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="mianwindow.qrc">
+   <iconset resource="mainwindow.qrc">
     <normaloff>:/Image/windowico.png</normaloff>:/Image/windowico.png</iconset>
   </property>
   <property name="styleSheet">
@@ -362,7 +362,7 @@ QTableWidget#tableWidget{
   </action>
  </widget>
  <resources>
-  <include location="mianwindow.qrc"/>
+  <include location="mainwindow.qrc"/>
  </resources>
  <connections/>
 </ui>

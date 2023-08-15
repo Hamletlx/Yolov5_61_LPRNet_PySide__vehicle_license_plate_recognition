@@ -8,7 +8,7 @@ import numpy as np
 from PySide6.QtWidgets import QApplication, QMainWindow, QMessageBox, QFileDialog, QTableWidgetItem
 from PySide6.QtGui import QImage, QPixmap
 from PySide6.QtCore import QCoreApplication
-from mianwindow_ui import Ui_MainWindow
+from mainwindow_ui import Ui_MainWindow
 from qt_material import apply_stylesheet
 
 from detect_yolov5 import *

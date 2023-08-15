@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mianwindow.ui'
+## Form generated from reading UI file 'mainwindow.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.5.2
 ##
@@ -19,7 +19,7 @@ from PySide6.QtGui import (QAction, QBrush, QColor, QConicalGradient,
 from PySide6.QtWidgets import (QApplication, QHBoxLayout, QHeaderView, QLabel,
     QMainWindow, QMenu, QMenuBar, QSizePolicy,
     QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget)
-import mianwindow_rc
+import mainwindow_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
